@@ -12,8 +12,10 @@ import init
 # 導入 ag100 所屬的模組
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
-
+#g1
 import users.s2a.g1.ag1_40323105_task1
+import users.s2a.g1.ag1_40323107_task1
+#g3
 #g6
 import users.s2a.g6.ag6
 import users.s2a.g6.ag6_40323112_task1
@@ -50,6 +52,33 @@ import users.s2b.g2.scrum2_task40123226
 import users.s2b.g2.scrum2_task40123232
 import users.s2b.g2.scrum2_task40123235
 import users.s2b.g2.scrum2_task40123244
+#g3
+import users.s2b.g3.task0
+import users.s2b.g3.scrum1_task40123250
+import users.s2b.g3.scrum2_task40123224
+import users.s2b.g3.scrum2_task40123239
+import users.s2b.g3.scrum2_task40123242
+import users.s2b.g3.scrum2_task40123250
+import users.s2b.g3.scrum3_task40123224
+import users.s2b.g3.scrum3_task40123242
+import users.s2b.g3.scrum3_task40123250
+#g4
+#import users.s2b.g4.taskbg4
+#import users.s2b.g5.scrum1_task40323201
+#import users.s2b.g5.scrum2_task40323202
+#import users.s2b.g5.scrum3_task40323203
+#import users.s2b.g5.scrum4_task40323205
+#import users.s2b.g5.scrum5_task40323208
+#import users.s2b.g5.scrum6_task40123128
+#以上幾行有錯誤
+#g5
+import users.s2b.g5.scrum1_task40323204
+import users.s2b.g5.scrum2_task40323206
+import users.s2b.g5.scrum3_task40323217
+import users.s2b.g5.scrum4_task40323251
+import users.s2b.g5.scrum5_task40323253
+import users.s2b.g5.scrum6_task40323255
+
 #g6
 import users.s2b.g6.task0
 import users.s2b.g6.scrum1_task40323210
@@ -370,7 +399,11 @@ def download(filename):
 app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
+#g1
 app.register_blueprint(users.s2a.g1.ag1_40323105_task1.ag1_40323105)
+app.register_blueprint(users.s2a.g1.ag1_40323107_task1.ag1_40323107)
+#g3
+
 #g6
 app.register_blueprint(users.s2a.g6.ag6.ag6)
 app.register_blueprint(users.s2a.g6.ag6_40323112_task1.ag6_40323112)
@@ -389,7 +422,7 @@ app.register_blueprint(users.s2a.g9.ag9_40323149_task1.ag9_40323149)
 app.register_blueprint(users.s2a.g9.ag9_40323150_task1.ag9_40323150)
 # 二乙
 #g1
-app.register_blueprint(bg1_0.bg1)
+
 app.register_blueprint(users.s2b.g1.scrum40123156_task1.scrum40123156_task1)
 app.register_blueprint(users.s2b.g1.scrum40123126_task1.scrum40123126_task1)
 app.register_blueprint(users.s2b.g1.scrum40123129_task1.scrum40123129_task1)
@@ -397,6 +430,8 @@ app.register_blueprint(users.s2b.g1.scrum40123131_task1.scrum40123131_task1)
 app.register_blueprint(users.s2b.g1.scrum40123133_task1.scrum40123133_task1)
 app.register_blueprint(users.s2b.g1.scrum40123144_task1.scrum40123144_task1)
 app.register_blueprint(users.s2b.g1.scrum40123134_task1.scrum40123134_task1)
+
+
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 app.register_blueprint(users.s2b.g2.task0.bg2)
 app.register_blueprint(users.s2b.g9.task0.bg9)
@@ -409,6 +444,30 @@ app.register_blueprint(users.s2b.g2.scrum2_task40123226.scrum2_task40123226)
 app.register_blueprint(users.s2b.g2.scrum2_task40123232.scrum2_task40123232)
 app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
+#g3
+app.register_blueprint(users.s2b.g3.scrum1_task40123250.scrum1_task40123250)
+app.register_blueprint(users.s2b.g3.scrum2_task40123224.scrum2_task40123224)
+app.register_blueprint(users.s2b.g3.scrum2_task40123239.scrum2_task40123239)
+app.register_blueprint(users.s2b.g3.scrum2_task40123242.scrum2_task40123242)
+app.register_blueprint(users.s2b.g3.scrum2_task40123250.scrum2_task40123250)
+app.register_blueprint(users.s2b.g3.scrum3_task40123224.scrum3_task40123224)
+app.register_blueprint(users.s2b.g3.scrum3_task40123242.scrum3_task40123242)
+app.register_blueprint(users.s2b.g3.scrum3_task40123250.scrum3_task40123250)
+#g4 
+#app.register_blueprint(users.s2b.g4.scrum1_task40323201.scrum1_task40323201)
+#app.register_blueprint(users.s2b.g4.scrum2_task40323202.scrum2_task40323202)
+#app.register_blueprint(users.s2b.g4.scrum3_task40323203.scrum3_task40323203)
+#app.register_blueprint(users.s2b.g4.scrum4_task40323205.scrum4_task40323205)
+#app.register_blueprint(users.s2b.g4.scrum5_task40323208.scrum5_task40323208)
+#app.register_blueprint(users.s2b.g4.scrum6_task40123128.scrum6_task40123128)
+#上面六行的程式碼有錯誤,因此我先改為註解
+#g5 
+app.register_blueprint(users.s2b.g5.scrum1_task40323204.scrum1_task40323204)
+app.register_blueprint(users.s2b.g5.scrum2_task40323206.scrum2_task40323206)
+app.register_blueprint(users.s2b.g5.scrum3_task40323217.scrum3_task40323217)
+app.register_blueprint(users.s2b.g5.scrum4_task40323251.scrum4_task40323251)
+app.register_blueprint(users.s2b.g5.scrum5_task40323253.scrum5_task40323253)
+app.register_blueprint(users.s2b.g5.scrum6_task40323255.scrum6_task40323255)
 #g6
 app.register_blueprint(users.s2b.g6.scrum1_task40323210.scrum1_task40323210)
 #g7
